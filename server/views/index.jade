@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  div(ng-controller='mainCtrl')
+    div.actionBar
+      button#bio.bio.col-1-3(ng-click="nav('bio')") Bio
+      button#resume.resume.col-1-3(ng-click="nav('resume')") Resume
+      button#projects.projects.col-1-3(ng-click="nav('projects')") Projects
+    main
+      figure.faceBox.col-2-12
+        img.myHead(src="../images/myHead.jpg")
+        figcaption.name Andrew Dourgarian
+      div.content.col-9-12
+        div.bio(ng-show="(currentPanel == 'bio')")
+          h2.title Personal Bio
+          div.paragraph
+            p Hello, I am Andrew Dourgarian. I am a web developer with on hands experience developing web applications
+              | with clients from the concept and planning phases through production. I am experienced in the the MEAN stack
+              | technologies(MongoDB, Express.js, Angularjs, Node.js) as well as many other languages and technologies.
+              | My main focus is on the front end development, including responsive web design, templating, client side
+              | logic in javascript and javascript frameworks, and server communication.
+          div.paragraph
+            p Though I haven’t been programming for long, I’ve learned several programming languages and best practices.
+              | I have experience working alongside other web developers, with clients, conceptualizing and building the
+              | most effective and convenient web applications for clients utilizing different plugins and API’s for added utility.
+          div.paragraph
+            p As a new web developer, I am striving to continue honing my current technologies and expand my skill set to
+              | become a stronger and more diverse software developer. Since my recent graduation from Prime Digital Academy,
+              | I’ve already learned Android development with Java and XML, two languages that I hadn’t had any experience
+              | with before, along with looking into open source crypto currency projects and developing in meteor.
+        div.resume(ng-show="(currentPanel == 'resume')")
+          h1.title Web Developer, Web Designer, Software Engineer
+          h2.subTitle Technologies
+          li.col-1-4(ng-repeat="tech in technologies")
+            div.circle(ng-repeat="i in getNumber(tech.level) track by $index")
+            p {{tech.name}}
+          h2.subTitle Experience
+          h3.col-7-12 Prime Digital Academy
+          h3.col-5-12 October 2015 ­ February 2016
+
+
+
+    footer.col-1-1
