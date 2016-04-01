@@ -14,29 +14,24 @@ block content
         div.bio(ng-show="(currentPanel == 'bio')")
           h2.title Personal Bio
           div.paragraph
-            p Hello, I am Andrew Dourgarian. I am a web developer with on hands experience developing web applications
-              | with clients from the concept and planning phases through production. I am experienced in the the MEAN stack
-              | technologies(MongoDB, Express.js, Angularjs, Node.js) as well as many other languages and technologies.
-              | My main focus is on the front end development, including responsive web design, templating, client side
-              | logic in javascript and javascript frameworks, and server communication.
+            p {{text.bio.P1}}
           div.paragraph
-            p Though I haven’t been programming for long, I’ve learned several programming languages and best practices.
-              | I have experience working alongside other web developers, with clients, conceptualizing and building the
-              | most effective and convenient web applications for clients utilizing different plugins and API’s for added utility.
+            p {{text.bio.P2}}
           div.paragraph
-            p As a new web developer, I am striving to continue honing my current technologies and expand my skill set to
-              | become a stronger and more diverse software developer. Since my recent graduation from Prime Digital Academy,
-              | I’ve already learned Android development with Java and XML, two languages that I hadn’t had any experience
-              | with before, along with looking into open source crypto currency projects and developing in meteor.
+            p {{text.bio.P3}}
         div.resume(ng-show="(currentPanel == 'resume')")
           h1.title Web Developer, Web Designer, Software Engineer
           h2.subTitle Technologies
-          li.col-1-4(ng-repeat="tech in technologies")
-            div.circle(ng-repeat="i in getNumber(tech.level) track by $index")
-            p {{tech.name}}
+          ul.skills
+            li.col-1-4(ng-repeat="tech in technologies")
+              div.circle(ng-repeat="i in getNumber(tech.level) track by $index")
+              p {{tech.name}}
           h2.subTitle Experience
           h3.col-7-12 Prime Digital Academy
-          h3.col-5-12 October 2015 ­ February 2016
+          h3.col-5-12.date October 2015 ­ February 2016
+          h4.cTitle Individual Capstone Project(MyBlog)
+          ul
+            li(ng-repeat="listItem in text.resume.myBlog.listItems") {{listItem}}
 
 
 

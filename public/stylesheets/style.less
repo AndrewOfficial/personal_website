@@ -51,31 +51,12 @@ main {
   }
   .content {
     background-color: rgba(15, 138, 172, 0.61);
-    padding: 10px 20px 0 50px;
+    padding: 10px 4% 0 4%;
     margin-bottom:50px;
 
-    ul {
-      list-style: none;
-    }
-
-    li {
-      width: 220px;
-      display: inline;
-      p {
-        float:left;
-        font-weight: 800;
-      }
-
       .paragraph {
-        margin-bottom: 50px;
-      }
-      .circle {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        margin: 10px 5px 0 0;
-        float: left;
-        background-color: #082332;
+        word-spacing: 2px;
+        line-height: 160%;
       }
     }
     .title {
@@ -84,7 +65,7 @@ main {
 
     .bio {
       p {
-        margin: 20px 0;
+        margin: 20px 40px 20px 0;
       }
     }
 
@@ -95,15 +76,40 @@ main {
       ul{
         margin-top: 0;
       }
+      .skills {
+        p {
+          float: left;
+          font-weight: 800;
+        }
+
+        ul {
+          list-style: none;
+        }
+
+        li {
+          width: 220px;
+          display: inline;
+        }
+
+        .circle {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          margin: 10px 5px 0 0;
+          float: left;
+          background-color: #082332;
+        }
+      }
+
       .subTitle {
         padding-top: 20px;
         margin-bottom:0px;
         clear: both;
       }
       .date{
-        float:right;
+        text-align: right;
+        padding-right:3%;
       }
-    }
   }
 }
 
