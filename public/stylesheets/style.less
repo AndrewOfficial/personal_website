@@ -126,15 +126,19 @@ main {
       .subTitle {
         clear: both;
       }
-      .date{
-        text-align: right;
-        padding-right:3%;
+      .date {
+        padding-right: 3%;
+      }
+      @media (min-width: 768px) {
+        .date {
+          text-align: right;
+        }
       }
     }
   }
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 
   main {
     padding-top: 0;
