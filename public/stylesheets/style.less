@@ -7,6 +7,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color: black;
 }
 
 a {
@@ -21,7 +22,7 @@ p {
   button {
     border: none;
     background-color: rgba(7, 63, 78, .5);
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 500;
     color: #1395d2;
     outline:none;
@@ -31,36 +32,38 @@ p {
 }
 
 main {
-  width:100%;
-  padding-top:50px;
+  padding-top:35px;
   overflow:hidden;
   background-color: rgba(38, 149, 182, 0.2);
   .faceBox {
+    padding-bottom: 20px;
     .myHead {
-      width:90%;
-      margin: 0 5% 0 5%;
+      width:200px;
+      margin: auto;
       -webkit-border-radius:50%;
       -moz-border-radius:50%;
       border-radius:50%;
     }
     .name{
-      font-size: 1.8em;
+      font-size: 2.8em;
       font-weight: bold;
-      text-align: center;
+      display:inline;
+      vertical-align: middle;
+      padding-left:40px;
     }
   }
   .content {
     background-color: rgba(15, 138, 172, 0.61);
-    padding: 10px 4% 0 4%;
+    padding: 10px 4% 25px 4%;
     margin-bottom:50px;
 
-      .paragraph {
-        word-spacing: 2px;
-        line-height: 160%;
-      }
+    .paragraph {
+      word-spacing: 2px;
+      line-height: 160%;
     }
+
     .title {
-      font-size:2em;
+      margin-bottom: 0;
     }
 
     .bio {
@@ -75,7 +78,26 @@ main {
       }
       ul{
         margin-top: 0;
+        margin-bottom: 15px;
+        clear: both;
       }
+      h2 {
+        margin: 0 0 10px 0;
+      }
+      h3, h4 {
+        padding: 0 0 10px 0;
+        margin: 0;
+      }
+
+      .contact {
+        padding-left: 20px;
+        list-style:none;
+        margin-bottom: 0;
+        li {
+          padding: 5px;
+        }
+      }
+
       .skills {
         p {
           float: left;
@@ -87,7 +109,7 @@ main {
         }
 
         li {
-          width: 220px;
+          width: 228px;
           display: inline;
         }
 
@@ -102,18 +124,39 @@ main {
       }
 
       .subTitle {
-        padding-top: 20px;
-        margin-bottom:0px;
         clear: both;
       }
       .date{
         text-align: right;
         padding-right:3%;
       }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+
+  main {
+    padding-top: 0;
+    .faceBox {
+      padding:18px;
+    }
+  }
+
+  .container {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .actionBar {
+    button {
+      padding: 35px 0;
+      width: 100%;
+    }
   }
 }
 
 footer {
-  height:300px;
+  height:150px;
   background-color: #082332;
 }

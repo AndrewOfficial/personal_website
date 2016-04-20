@@ -53,23 +53,23 @@ app.controller('mainCtrl', ['$scope', '$timeout', function($scope, $timeout){
       name:"Jade Templates",
       level: 4
     },{
-      name:"ECMAscript",
-      level: 4
-    },{
       name:"Web Design",
       level: 4
     },{
       name:"User Interface",
       level: 4
     },{
-      name:"Java",
+      name:"ECMAscript",
       level: 3
+    },{
+      name:"Java",
+      level: 2
     },{
       name:"XML",
-      level: 3
+      level: 2
     },{
       name:"Android",
-      level: 3
+      level: 2
     }
   ];
 
@@ -89,6 +89,14 @@ app.controller('mainCtrl', ['$scope', '$timeout', function($scope, $timeout){
       " technologies and learn as much as possible."
     },
     resume : {
+      tworks: {
+        listItems : [
+          "Design new pages for upcoming software releases and redesign parts of current site to specification.",
+          "Write new code and clean up bad code in meteor.js environment.",
+          "Find and fix bugs in meteor.js while tracking bugs in Trello.",
+          "Work with other developers remotely to overcome programming challenges and develop software solutions."
+        ]
+      },
       myBlog: {
         listItems : [
           "Designed and developed a social networking site for bloggers.",
@@ -102,9 +110,38 @@ app.controller('mainCtrl', ['$scope', '$timeout', function($scope, $timeout){
           " JS Web Tokens, Jade Templates, AJAX, CSS 3, Bootstrap, HTML 5.",
           "Github Repository: https://github.com/ADourgarian/social_networking_site"
         ]
+      },
+      unionPark: {
+        listItems: [
+          "Worked on a development team serving Union Park. Union Park is a marketing firm in Minneapolis that " +
+          "specializes in Consumer Cue Marketing.",
+          "Through client interaction with Union Park, we were able to give our project the direction we needed to" +
+          " develop an effective app for them in the time we were allotted.",
+          "Our project helps Union Park manage consumer cues for an editorial calendar product. Prior to our application," +
+          " Union Park's editorial calendar was laid out in a spreadsheet and manually inputted. We automated the process" +
+          " using third-party event feeds from Google and storing them in a database that was easily searchable.",
+          "We developed an administrator interface along with a database structure utilizing Google APIs to optimize" +
+          " their marketing calendar product creation and support further development of their website and business.",
+          "Technologies used: Node.js, Express, Javascript, Google Cloud Datastore(Cloud Database), AngularJS, npm Scripts," +
+          " Passport, Jade Templates, AJAX, CSS 3, Angular Materials, HTML 5."
+        ]
+      },
+      tempworks: {
+        listItems: [
+          "Learned to design user interfaces for clients.",
+          "Worked alongside professional web designers and developers.",
+          "Participated in daily standups."
+        ]
+      },
+      dunnBros: {
+        listItems: [
+          "Maintained cordial and professional relationships with coworkers, managers and customers.",
+          "Informed customers about specialty drink and food ingredients as required.",
+          "Operated cash register and credit card machine accurately and efficiently in processing customer payments.",
+          "Upheld company customer service standards at all times."
+        ]
       }
     }
-
   };
 
   $scope.nav = function(css){
