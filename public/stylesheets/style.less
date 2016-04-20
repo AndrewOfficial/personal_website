@@ -1,12 +1,7 @@
 body {
   margin:0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-
-  background: url(../images/bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #F1F1F1;
   color: black;
 }
 
@@ -18,120 +13,127 @@ p {
   margin: 3px 0;
 }
 
-.actionBar {
-  button {
-    border: none;
-    background-color: rgba(7, 63, 78, .5);
-    font-size: 3em;
-    font-weight: 500;
-    color: #1395d2;
-    outline:none;
-  }
-  button:hover { background-color: rgba(10, 93, 116, 0.61); }
-  button:active { background-color: SteelBlue; color: White; }
-}
-
 main {
-  padding-top:35px;
   overflow:hidden;
-  background-color: rgba(38, 149, 182, 0.2);
-  .faceBox {
-    padding-bottom: 20px;
-    .myHead {
-      width:200px;
-      margin: auto;
-      -webkit-border-radius:50%;
-      -moz-border-radius:50%;
-      border-radius:50%;
-    }
-    .name{
-      font-size: 2.8em;
-      font-weight: bold;
-      display:inline;
-      vertical-align: middle;
-      padding-left:40px;
-    }
-  }
-  .content {
-    background-color: rgba(15, 138, 172, 0.61);
-    padding: 10px 4% 25px 4%;
-    margin-bottom:50px;
+  .container {
+    padding: 0;
+    background: #FFFFFF;
 
-    .paragraph {
-      word-spacing: 2px;
-      line-height: 160%;
+    .actionBar {
+      clear:both;
+      button {
+        border: none;
+        float: none;
+        background-color: #F8F8F8;
+        font-size: 3em;
+        font-weight: 500;
+        color: #1395d2;
+        outline:none;
+      }
+      button:hover { background-color: rgba(10, 93, 116, 0.61); }
+      button:active { background-color: SteelBlue; color: White; }
     }
-
-    .title {
-      margin-bottom: 0;
-    }
-
-    .bio {
-      p {
-        margin: 20px 40px 20px 0;
+    .faceBox {
+      padding-bottom: 20px;
+      padding-top: 20px;
+      clear:both;
+      .myHead {
+        width:200px;
+        margin: auto;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        border-radius:50%;
+      }
+      .name{
+        font-size: 2.8em;
+        font-weight: bold;
+        display:inline;
+        vertical-align: middle;
+        padding-left:40px;
       }
     }
+    .content {
+      padding: 10px 4% 25px 4%;
+      margin-bottom:50px;
 
-    .resume {
-      p{
-        margin: 3px;
-      }
-      ul{
-        margin-top: 0;
-        margin-bottom: 15px;
-        clear: both;
-      }
-      h2 {
-        margin: 0 0 10px 0;
-      }
-      h3, h4 {
-        padding: 0 0 10px 0;
-        margin: 0;
+      .paragraph {
+        word-spacing: 2px;
+        line-height: 160%;
       }
 
-      .contact {
-        padding-left: 20px;
-        list-style:none;
+      .title {
         margin-bottom: 0;
-        li {
-          padding: 5px;
-        }
       }
 
-      .skills {
+      .bio {
         p {
-          float: left;
-          font-weight: 800;
-        }
-
-        ul {
-          list-style: none;
-        }
-
-        li {
-          width: 228px;
-          display: inline;
-        }
-
-        .circle {
-          width: 10px;
-          height: 10px;
-          border-radius: 50%;
-          margin: 10px 5px 0 0;
-          float: left;
-          background-color: #082332;
+          margin: 20px 40px 20px 0;
         }
       }
 
-      .subTitle {
-        clear: both;
-      }
-      .date {
-        padding-right: 3%;
-      }
-      @media (min-width: 768px) {
+      .resume {
+        p{
+          margin: 3px;
+        }
+        ul{
+          margin-top: 0;
+          margin-bottom: 15px;
+          clear: both;
+        }
+        h2 {
+          margin: 0 0 10px 0;
+        }
+        h3, h4 {
+          padding: 0 0 10px 0;
+          margin: 0;
+        }
+
+        .contact {
+          padding-left: 20px;
+          padding-top: 15px;
+          list-style:none;
+          margin-bottom: 0;
+          li {
+            padding: 5px;
+          }
+        }
+
+        .skills {
+          p {
+            float: left;
+            font-weight: 800;
+          }
+
+          ul {
+            list-style: none;
+          }
+
+          li {
+            width: 228px;
+            display: inline;
+          }
+
+          .circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 10px 5px 0 0;
+            float: left;
+            background-color: #082332;
+          }
+        }
+
+        .subTitle {
+          padding-top: 15px;
+          clear: both;
+        }
         .date {
-          text-align: right;
+          padding-right: 3%;
+        }
+        @media (min-width: 768px) {
+          .date {
+            text-align: right;
+          }
         }
       }
     }

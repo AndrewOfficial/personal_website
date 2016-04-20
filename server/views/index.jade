@@ -2,15 +2,15 @@ extends layout
 
 block content
   div(ng-controller='mainCtrl')
-    div.row.actionBar
-      button#bio.bio.col-sm-6(ng-click="nav('bio')") Bio
-      button#resume.resume.col-sm-6(ng-click="nav('resume')") Resume/Portfolio
     main.row
       .container
-        figure.faceBox.col-md-offset-1(ng-show="(currentPanel == 'bio')")
-          img.myHead(src="../images/myHead.jpg")
-          figcaption.name Andrew Dourgarian
+        .actionBar
+          button#bio.bio.col-sm-6(ng-click="nav('bio')") Bio
+          button#resume.resume.col-sm-6(ng-click="nav('resume')") Resume/Portfolio
         div.content
+          figure.faceBox.col-md-offset-1(ng-show="(currentPanel == 'bio')")
+            img.myHead(src="../images/myHead.jpg")
+            figcaption.name Andrew Dourgarian
           div.bio(ng-show="(currentPanel == 'bio')")
             h2.title Personal Bio
             div.paragraph
