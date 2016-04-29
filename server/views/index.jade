@@ -5,8 +5,9 @@ block content
     main.row
       .container
         .actionBar
-          button#bio.bio.col-sm-6(ng-click="nav('bio')") Bio
-          button#resume.resume.col-sm-6(ng-click="nav('resume')") Resume/Portfolio
+          button#bio.bio.col-sm-4(ng-click="nav('bio')") Bio
+          button#resume.resume.col-sm-4(ng-click="nav('resume')") Resume
+          button#portfolio.resume.col-sm-4(ng-click="nav('portfolio')") Portfolio
         div.content
           figure.faceBox.col-md-offset-1(ng-show="(currentPanel == 'bio')")
             img.myHead(src="../images/myHead.jpg")
@@ -67,4 +68,14 @@ block content
             h4.col-sm-8.date August 2014 - June 2015
             ul
               li(ng-repeat="listItem in text.resume.dunnBros.listItems") {{listItem}}
+          div.portfolio(ng-show="(currentPanel == 'portfolio')")
+            h1.title My Projects
+            div(ng-repeat="project in text.portfolio")
+              h3 {{project.title}}
+              span(ng-show="project.url") Live Site Url:
+                a {{project.url}}
+              span(ng-show="project.github_url") Github Repository Url:
+                a {{project.github_url}}
+              div.paragraph(ng-repeat="paragraph in project.paragraphs")
+                p {{paragraph}}
     footer

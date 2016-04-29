@@ -141,6 +141,51 @@ app.controller('mainCtrl', ['$scope', '$timeout', function($scope, $timeout){
           "Upheld company customer service standards at all times."
         ]
       }
+    },
+    portfolio : {
+      personal_website:{
+        title: 'Personal Website(This website)',
+        github_url: 'https://github.com/ADourgarian/personal_website',
+        paragraphs: ["I created my personal website to showcase my bio and resume and designed it to be mobile friendly. I also" +
+        "intend to put this portfolio up there eventually as well. For this website I used angularjs/javascript to manage" +
+        "the content and tab click-events as well as jade, which is a templating engine which compiles into html. The " +
+        "angularjs and javascript use was very light in this project, I highly recommend checking out my group project and" +
+        "solo project from Prime academy below for better examples of my work in those technologies."]
+      },
+      tworks: {
+        title: 'Tworks.io(Tempworks)',
+        url: 'https://dev.aidacreative.com/login?returnUrl=%2F',
+        paragraphs: ["Tworks.io is a startup underneath Tempworks that is redeveloping from scratch the software suite that Tempworks" +
+        "licenses. Tworks.io’s new software application is used to streamline business networking and is especially designed" +
+        "for temp and recruiting agencies. It allows a business to easily manage its relations with all of their employees" +
+        "and customers. The objective with redeveloping the software is to increase speed, functionality, user-interface," +
+        "and user-experience along with adding a whole bunch of new features.",
+        "You can create an account and log in at https://dev.aidacreative.com/login?returnUrl=%2F . I’ve done some" +
+        "design work on the log in/register pages. Also once you log in. If you check out the navigation bar at the top," +
+        "I did some redesign work there. There was a lot of wonky html/css code that I had to take apart and rewrite and I" +
+        "made it responsive for smaller screens widths such as cell-phones. I’m currently working on cleaning up the responsive" +
+        "design and notification functionality as well as other bugs/to-dos."]
+      },
+      group_project: {
+        title: 'Prime Academy Group Project',
+        url: "http://ec2-52-91-228-202.compute-1.amazonaws.com:3000/",
+        paragraphs: ["Our group project client was Union Park Marketing. Our job was to design and build an application in a 3 week" +
+        "period that would pull in information on upcoming events from google calendar APIs and display it in an easy to" +
+        "visualize and editable fashion.",
+        "For this project, I spent a lot of time honing my front end Technologies. Most of my work was in Angularjs/Javascript" +
+        "as well as html and css/bootstrap. We also integrated some plugins such as the tag search and the pagination elements." +
+        "Here is a link to code that I personally wrote: https://github.com/ADourgarian/union-park/blob/master/public/scripts/controllers/ccTableCtrl.js"]
+      },
+      solo_project: {
+        title: 'Prime Academy Solo Project',
+        github_url: 'https://github.com/ADourgarian/social_networking_site',
+        paragraphs: [ "The goal was to make a social networking/blogging site for musicians(I am a guitarist). In this application," +
+        "you can create a new user or log in as a previous users. Each user gets their own profile page, complete with " +
+        "a personal info area and a personal blog. You can navigate to other users blogs and subscribe to them or comment" +
+        "on their posts. Posts from all of your subscriptions get filtered into a personal newsfeed page that only the user can see. ",
+        "For this project I spent most of my time writing node.js and Mongodb in the back and as well as Angularjs/javascript." +
+        "I did not spend much time designing, but what I did do was heavily in bootstrap."]
+      }
     }
   };
 
