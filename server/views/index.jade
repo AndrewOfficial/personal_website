@@ -72,10 +72,12 @@ block content
             h1.title My Projects
             div(ng-repeat="project in text.portfolio")
               h3 {{project.title}}
-              span(ng-show="project.url") Live Site Url:
-                a {{project.url}}
-              span(ng-show="project.github_url") Github Repository Url:
-                a {{project.github_url}}
+              div
+                span(ng-show="project.url") Live Site Url:
+                  a(href="{{project.url}}") {{project.url}}
+              div
+                span(ng-show="project.github_url") Github Repository Url:
+                  a(href="{{project.github_url}}") {{project.github_url}}
               div.paragraph(ng-repeat="paragraph in project.paragraphs")
                 p {{paragraph}}
     footer

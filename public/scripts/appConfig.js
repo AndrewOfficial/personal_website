@@ -169,12 +169,13 @@ app.controller('mainCtrl', ['$scope', '$timeout', function($scope, $timeout){
       group_project: {
         title: 'Prime Academy Group Project',
         url: "http://ec2-52-91-228-202.compute-1.amazonaws.com:3000/",
+        github_url: "https://github.com/ADourgarian/union-park/blob/master/public/scripts/controllers/ccTableCtrl.js",
         paragraphs: ["Our group project client was Union Park Marketing. Our job was to design and build an application in a 3 week " +
         "period that would pull in information on upcoming events from google calendar APIs and display it in an easy to " +
         "visualize and editable fashion.",
         "For this project, I spent a lot of time honing my front end Technologies. Most of my work was in Angularjs and Javascript " +
         "as well as html and css/bootstrap. We also integrated some plugins such as the tag search and the pagination elements. " +
-        "Here is a link to code that I personally wrote: https://github.com/ADourgarian/union-park/blob/master/public/scripts/controllers/ccTableCtrl.js"]
+        "The Github Url above leads to a sample page of code that I personally wrote."]
       },
       solo_project: {
         title: 'Prime Academy Solo Project',
