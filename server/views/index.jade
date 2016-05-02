@@ -14,12 +14,8 @@ block content
             figcaption.name Andrew Dourgarian
           div.bio(ng-show="(currentPanel == 'bio')")
             h2.title Personal Bio
-            div.paragraph
-              p {{text.bio.P1}}
-            div.paragraph
-              p {{text.bio.P2}}
-            div.paragraph
-              p {{text.bio.P3}}
+            div.paragraph(ng-repeat="paragraph in text.bio track by $index")
+              p {{paragraph}}
           div.resume(ng-show="(currentPanel == 'resume')")
             h1.title Web Developer, Web Designer, Software Engineer
             ul.contact

@@ -74,20 +74,23 @@ app.controller('mainCtrl', ['$scope', '$timeout', function($scope, $timeout){
   ];
 
   $scope.text = {
-    bio : {
-      P1: "I am a full-stack web developer with hands on experience working alongside other developers and" +
-      " with clients to conceptualize, design, and build the most effective and convenient web applications for clients" +
-      " utilizing different plugins and web API’s for added utility. ",
-      P2: "I’ve learned several programming languages and best practices as a web developer, and I am striving" +
-      " to continue honing my current technologies and expand my skill set to become a stronger and more diverse software" +
-      " developer. Since my recent graduation from Prime Digital Academy, I’ve already learned Android development with" +
-      " Java and XML, two languages that I hadn’t had any experience with before, along with looking into open source" +
-      " cryptographic currency projects and developing in meteor.",
-      P3: "I love creating and I am always working on one project or another on my own time, whether it be" +
-      " music, art, a game, or learning a new skill. I am looking for a fast-paced and exciting work environment with an" +
-      " open, close-knit, and fun community. My number one priority is having the opportunity to work with new" +
-      " technologies and learn as much as possible."
-    },
+    bio : [
+      "I am a full-stack web developer with hands on experience working alongside other developers and " +
+      "with clients to conceptualize, design, and build the most effective and convenient web applications for clients " +
+      "utilizing different plugins and web API’s for added utility. ",
+      "I’ve learned several programming languages and best practices as a web developer, and I am striving " +
+      "to continue honing my current technologies and expand my skill set to become a stronger and more diverse software " +
+      "developer. Since my recent graduation from Prime Digital Academy, I’ve already learned Android development with " +
+      "Java and XML, two languages that I hadn’t had any experience with before, along with looking into open source " +
+      "cryptographic currency projects and developing in meteor. ",
+      "The traits that make me a strong programmer are my patience and perseverance, fast and strategic problem solving " +
+      "methods, and ability to unify and amplify the abilities of other programmers. I pride myself in being able learn " +
+      "fast, adapt to new situations, and accomplish my goals, even if they seem insurmountable at first.",
+      "I love creating and I am always working on one project or another on my own time, whether it be " +
+      "music, art, a game, or learning a new skill. I am looking for a fast-paced and exciting work environment with an " +
+      "open, close-knit, and fun community. My number one priority is having the opportunity to work with new " +
+      "technologies and learn as much as possible."
+    ],
     resume : {
       tworks: {
         listItems : [
