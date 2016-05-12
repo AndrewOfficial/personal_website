@@ -146,6 +146,36 @@ app.controller('mainCtrl', ['$scope', '$timeout', function($scope, $timeout){
       }
     },
     portfolio : {
+      moodalytics : {
+        title: 'Moodalytics',
+        github_url: 'https://github.com/ADourgarian/Moodalytics',
+        paragraphs: [
+          "Moodalytics is a collaborative project between two other members and me that we built at the Mothers’ Day " +
+          "Hackathon at Leonardo’s Basement. The challenge was to show up to the event, join a group with someone who " +
+          "came with an idea or concept for an IOT device/app, and hack away for 10 hours on it. Our team created an " +
+          "android app that used facial recognition to read your mood. Based on how big of a smile you have, it would " +
+          "light up an appropriate number of LED lights and fluctuate for your changing facial expression. At the end " +
+          "of the day, when the judging was finished, we snagged third place!",
+          "For this project we used java and xml for the android app and sent data up to a Node.js server which calculated " +
+          "how many LED lights to light up, which it sent to an Arduino calibrated to light up a light strip based on what number it was passed. "
+        ]
+      },
+      tanksio : {
+        title: 'Tanks.io',
+        url: 'https://tanksio.herokuapp.com',
+        github_url: 'https://github.com/ADourgarian/tank.io',
+        paragraphs: [
+          "Tanks.io is a personal videogame project I’ve been working on that was inspired by agar.io . The concept is " +
+          "a multiplayer 2D birds-eye view bullet hell. The player will control a “tank” that can shoot projectiles at " +
+          "other tanks. Taking down other players will give the player a buff, making them harder to kill and also allowing " +
+          "them to more easily take down others. If a player takes down a buffed opponent, they will get a bigger buff. " +
+          "I’ve got websockets set up so that anyone who goes to the game url will join a room with all the other players. " +
+          "Currently you can move around with WASD and shoot by holding down the left mouse button in the direction you want to shoot.",
+          "For this project I’m using a couple of new technologies. I’m running a Node.js server that implements websockets " +
+          "for faster communication with the clients and makes live updating possible. Also, I am utilizing the Phaser " +
+          "game engine to keep track of players and projectiles on Canvas."
+        ]
+      },
       personal_website:{
         title: 'Personal Website(This website)',
         github_url: 'https://github.com/ADourgarian/personal_website',
