@@ -13,11 +13,11 @@ p {
 }
 
 .actionBar {
-  z-index: 1;
+  position: relative;
   clear:both;
   background-color: #1d1d1d;
-  color: #13B87C;
-  box-shadow: 10px 5px 5px black;
+  color: #1abc9c;
+  box-shadow: 0 0 5px black;
 
   h2 {
     margin-top: 14px;
@@ -44,19 +44,16 @@ p {
 main {
 
   .background {
-    background-image: url('../images/desk.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height:500px;
+    background-color: #1abc9c;
+    box-shadow: 0 0 5px black;
 
     h1 {
+      margin: 0;
+      color: #FFFFFF;
       font-size: 4em;
       font-weight: 900;
-      position: absolute;
-      top: 15%;
-      left: 15%;
+      padding: 50px 0 ;
+      text-align: center;
     }
   }
   .container {
