@@ -1,13 +1,16 @@
 extends layout
 
 block content
-  div(ng-controller='mainCtrl')
+  div.container-fluid(ng-controller='mainCtrl')
+    .actionBar.row
+      h2 Andrew Dourgarian
+      button#portfolio.portfolio(ng-click="nav('portfolio')") Portfolio
+      button#resume.resume(ng-click="nav('resume')") Resume
+      button#bio.bio(ng-click="nav('bio')") Bio
     main.row
+      .background
+        h1 Full Stack Web Developer
       .container
-        .actionBar
-          button#bio.bio.col-sm-4(ng-click="nav('bio')") Bio
-          button#resume.resume.col-sm-4(ng-click="nav('resume')") Resume
-          button#portfolio.resume.col-sm-4(ng-click="nav('portfolio')") Portfolio
         div.content
           figure.faceBox.col-md-offset-1(ng-show="(currentPanel == 'bio')")
             img.myHead(src="../images/myHead.jpg")

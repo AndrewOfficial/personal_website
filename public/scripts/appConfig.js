@@ -241,7 +241,7 @@ app.controller('mainCtrl', ['$scope', '$timeout', function($scope, $timeout){
     }
 
     var panel = document.getElementById(css);
-    panel.style.backgroundColor = "rgb(248, 248, 248)";
+    //panel.style.backgroundColor = "rgb(248, 248, 248)";
 
     lastPanel = panel;
   }

@@ -1,7 +1,6 @@
 body {
   margin:0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: #F1F1F1;
+  font: 14px Arial, sans-serif;
   color: black;
 }
 
@@ -13,26 +12,55 @@ p {
   margin: 3px 0;
 }
 
+.actionBar {
+  z-index: 1;
+  clear:both;
+  background-color: #1d1d1d;
+  color: #13B87C;
+  box-shadow: 10px 5px 5px black;
+
+  h2 {
+    margin-top: 14px;
+    padding-left:20px;
+    display: inline;
+    float: left;
+  }
+  button {
+    width: 20%;
+    padding: 5px 0;
+    border: none;
+    border-left: 1px solid rgba(50, 50, 50, 0.7);
+    background: none;
+    float: right;
+    font-size: 3em;
+    font-weight: 500;
+    outline:none;
+    transition: .5s ease-in-out;
+
+  }
+  button:hover { background-color: rgba(10, 150, 174, 0.61); }
+}
+
 main {
-  overflow:hidden;
+
+  .background {
+    background-image: url('../images/desk.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:500px;
+
+    h1 {
+      font-size: 4em;
+      font-weight: 900;
+      position: absolute;
+      top: 15%;
+      left: 15%;
+    }
+  }
   .container {
     padding: 0;
-    background: #FFFFFF;
-
-    .actionBar {
-      clear:both;
-      button {
-        border: none;
-        float: none;
-        background-color: rgba(38, 149, 182, 0.2);
-        font-size: 3em;
-        font-weight: 500;
-        color: #1395d2;
-        outline:none;
-      }
-      button:hover { background-color: rgba(10, 93, 116, 0.61); }
-      button:active { background-color: SteelBlue; color: White; }
-    }
     .faceBox {
       padding-bottom: 20px;
       padding-top: 20px;
