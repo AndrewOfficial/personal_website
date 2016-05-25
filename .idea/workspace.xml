@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb041b05-830f-42aa-8561-68a4df1771f8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/scripts/appConfig.js" afterPath="$PROJECT_DIR$/public/scripts/appConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.less" afterPath="$PROJECT_DIR$/public/stylesheets/style.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/index.jade" afterPath="$PROJECT_DIR$/server/views/index.jade" />
     </list>
     <ignored path="personalWebsite.iws" />
@@ -27,21 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4632207">
+            <state vertical-scroll-proportion="-2.9871795">
               <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/views/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.44592032">
+              <caret line="48" column="57" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -127,8 +124,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server/routes/index.js" />
         <option value="$PROJECT_DIR$/public/scripts/appConfig.js" />
-        <option value="$PROJECT_DIR$/server/views/index.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.less" />
+        <option value="$PROJECT_DIR$/server/views/index.jade" />
       </list>
     </option>
   </component>
@@ -828,18 +825,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/views/index.jade">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state vertical-scroll-proportion="-2.9871795">
+          <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.less">
+    <entry file="file://$PROJECT_DIR$/server/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4632207">
-          <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.44592032">
+          <caret line="48" column="57" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
           <folding />
         </state>
       </provider>
