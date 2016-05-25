@@ -25,6 +25,21 @@ p {
     display: inline;
     float: left;
   }
+
+  ul.media{
+    display: inline;
+    float: left;
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 20px;
+    margin-bottom: 0;
+    li {
+      float: left;
+      list-style: none;
+      padding: 5px;
+    }
+  }
+
   button {
     width: 20%;
     padding: 5px 0;
@@ -57,7 +72,6 @@ main {
     }
   }
   .container {
-    padding: 0;
     .faceBox {
       padding-bottom: 20px;
       padding-top: 20px;
@@ -78,7 +92,7 @@ main {
       }
     }
     .content {
-      padding: 10px 4% 25px 4%;
+      padding: 10px 10% 25px 10%;
       margin-bottom:50px;
 
       .paragraph {
@@ -91,7 +105,10 @@ main {
       }
 
       .bio {
+        margin: 0 5%;
         p {
+          font-weight: 400;
+          font-size: 1.1em;
           margin: 20px 40px 20px 0;
         }
       }
@@ -113,38 +130,24 @@ main {
           margin: 0;
         }
 
-        .contact {
-          padding-left: 20px;
-          padding-top: 15px;
-          list-style:none;
-          margin-bottom: 0;
-          li {
-            padding: 5px;
-          }
-        }
-
         .skills {
-          p {
-            float: left;
-            font-weight: 800;
-          }
-
-          ul {
-            list-style: none;
-          }
 
           li {
-            width: 250px;
-            display: inline;
-          }
-
-          .circle {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            margin: 10px 5px 0 0;
+            list-style: none;
             float: left;
-            background-color: #082332;
+            padding: 8px;
+            margin: 2px;
+            background-color:#2d89ef;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px black;
+            transition: .3s ease-in-out;
+            p {
+              display: inline;
+              color: #FFFFFF;
+            }
+          }
+          li:hover{
+            background-color: #1c5797;
           }
         }
 
@@ -180,14 +183,40 @@ main {
   }
 
   .actionBar {
+    .header {
+      h2 {
+        width: 100%;
+        padding: 25px 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 4em;
+        border-bottom: 1px solid rgba(50, 50, 50, 0.7);
+      }
+      .media {
+        display: none;
+      }
+    }
     button {
       padding: 35px 0;
       width: 100%;
+      border-bottom: 1px solid rgba(50, 50, 50, 0.7);
     }
   }
 }
 
+
 footer {
-  height:300px;
-  background-color: #082332;
+  height:150px;
+  background-color: #1d1d1d;
+
+  ul.media{
+    float: right;
+    padding-top: 30px;
+    margin-right: 50px;
+    li {
+      float: left;
+      list-style: none;
+      padding: 15px;
+    }
+  }
 }

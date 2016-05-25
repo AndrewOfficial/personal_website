@@ -5,71 +5,49 @@ app.controller('mainCtrl', ['$scope', '$timeout', function($scope, $timeout){
   $scope.currentPannel = "bio";
   $scope.technologies = [
     {
-      name:"Javascript",
-      level: 5
+      name:"Javascript"
     },{
-      name:"AngularJS",
-      level: 5
+      name:"AngularJS"
     },{
-      name:"Nodejs",
-      level: 5
+      name:"Nodejs"
     },{
-      name:"Express",
-      level: 5
+      name:"Express"
     },{
-      name:"AJAX",
-      level: 5
+      name:"AJAX"
     },{
-      name:"HTML",
-      level: 5
+      name:"HTML"
     },{
-      name:"CSS",
-      level: 5
+      name:"CSS"
     },{
-      name:"LESS",
-      level: 5
+      name:"LESS"
     },{
-      name:"Bootstrap",
-      level: 5
+      name:"Bootstrap"
     },{
-      name:"Express",
-      level: 5
+      name:"Express"
     },{
-      name:"MongoDB",
-      level: 5
+      name:"MongoDB"
     },{
-      name:"Mongoose",
-      level: 5
+      name:"Mongoose"
     },{
-      name:"Git",
-      level: 5
+      name:"Git"
     },{
-      name:"User Experience",
-      level: 5
+      name:"User Experience"
     },{
-      name:"Jquery",
-      level: 4
+      name:"Jquery"
     },{
-      name:"Jade Templates",
-      level: 4
+      name:"Jade Templates"
     },{
-      name:"Web Design",
-      level: 4
+      name:"Web Design"
     },{
-      name:"User Interface",
-      level: 4
+      name:"User Interface"
     },{
-      name:"ECMAscript",
-      level: 3
+      name:"ECMAscript"
     },{
-      name:"Java",
-      level: 2
+      name:"Java"
     },{
-      name:"XML",
-      level: 2
+      name:"XML"
     },{
-      name:"Android",
-      level: 2
+      name:"Android"
     }
   ];
 

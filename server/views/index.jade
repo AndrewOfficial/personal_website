@@ -3,35 +3,36 @@ extends layout
 block content
   div.container-fluid(ng-controller='mainCtrl')
     .actionBar.row
-      h2 Andrew Dourgarian
+      .header
+        h2 Andrew Dourgarian
+        ul.media
+          li
+            a(href="https://github.com/ADourgarian")
+              img(src="../images/media/githubWhite.png" width="50px" height="50px")
+          li
+            a(href="https://www.linkedin.com/in/andrew-dourgarian-73261569?trk=hp-identity-photo")
+              img(src="../images/media/linkedIn.png" width="50px" height="50px")
       button#portfolio.portfolio(ng-click="nav('portfolio')") Portfolio
       button#resume.resume(ng-click="nav('resume')") Resume
       button#bio.bio(ng-click="nav('bio')") Bio
     main.row
       .background
-        h1 Full Stack Web Developer
+        .container
+          h1(ng-show="(currentPanel == 'bio')") Full Stack Web Developer
+          h1(ng-show="(currentPanel == 'resume')") Web Developer / Software Engineer
       .container
         div.content
           //figure.faceBox.col-md-offset-1(ng-show="(currentPanel == 'bio')")
           //  img.myHead(src="../images/myHead.jpg")
           //  figcaption.name Andrew Dourgarian
           div.bio(ng-show="(currentPanel == 'bio')")
-            h2.title Personal Bio
+            h1.title Personal Bio
             div.paragraph(ng-repeat="paragraph in text.bio track by $index")
               p {{paragraph}}
           div.resume(ng-show="(currentPanel == 'resume')")
-            h1.title Web Developer, Web Designer, Software Engineer
-            ul.contact
-              li
-                span Github:
-                  a(href="https://github.com/ADourgarian") https://github.com/ADourgarian
-              li
-                span LinkedIn:
-                  a(href="https://www.linkedin.com/in/andrew-dourgarian-73261569?trk=hp-identity-photo") https://www.linkedin.com/in/andrew-dourgarian-73261569?trk=hp-identity-photo
             h2.subTitle Technologies
             ul.skills
-              li.col-xs-3(ng-repeat="tech in technologies")
-                div.circle(ng-repeat="i in getNumber(tech.level) track by $index")
+              li(ng-repeat="tech in technologies")
                 p {{tech.name}}
             h2.subTitle Experience
             h3 Full Stack Web Developer
@@ -79,4 +80,11 @@ block content
                   a(href="{{project.github_url}}") {{project.github_url}}
               div.paragraph(ng-repeat="paragraph in project.paragraphs")
                 p {{paragraph}}
-    footer
+      footer
+        ul.media
+          li
+            a(href="https://github.com/ADourgarian")
+              img(src="../images/media/githubWhite.png" width="50px" height="50px")
+          li
+            a(href="https://www.linkedin.com/in/andrew-dourgarian-73261569?trk=hp-identity-photo")
+              img(src="../images/media/linkedIn.png" width="50px" height="50px")
