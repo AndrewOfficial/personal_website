@@ -11,6 +11,8 @@ app.controller('mainCtrl', ['$scope', '$timeout', function($scope, $timeout){
     },{
       name:"Nodejs"
     },{
+      name:"WebSockets"
+    },{
       name:"Express"
     },{
       name:"AJAX"
@@ -88,8 +90,7 @@ app.controller('mainCtrl', ['$scope', '$timeout', function($scope, $timeout){
           " All posts and comments on blogs the user is subscribed to are fed into the newsfeed page.",
           "Wrote a project scope to plan out the development process, project milestones, and goals.",
           "Technologies used: MEAN Stack(MongoDB, Express, AngularJs, Node.js), Javascript, Cloud Storage API," +
-          " JS Web Tokens, Jade Templates, AJAX, CSS 3, Bootstrap, HTML 5.",
-          "Github Repository: https://github.com/ADourgarian/social_networking_site"
+          " JS Web Tokens, Jade Templates, AJAX, CSS 3, Bootstrap, HTML 5."
         ]
       },
       unionPark: {
