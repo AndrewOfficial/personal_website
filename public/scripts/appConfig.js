@@ -130,14 +130,9 @@ app.controller('mainCtrl', ['$scope', '$timeout', function($scope, $timeout){
         url: 'https://thequizapp.herokuapp.com/',
         github_url: 'https://github.com/ADourgarian/quizApp',
         paragraphs: [
-          "Moodalytics is a collaborative project between two other members and me that we built at the Mothers’ Day " +
-          "Hackathon at Leonardo’s Basement. The challenge was to show up to the event, join a group with someone who " +
-          "came with an idea or concept for an IOT device/app, and hack away for 10 hours on it. Our team created an " +
-          "android app that used facial recognition to read your mood. Based on how big of a smile you have, it would " +
-          "light up an appropriate number of LED lights and fluctuate for your changing facial expression. At the end " +
-          "of the day, when the judging was finished, we snagged third place!",
-          "For this project we used java and xml for the android app and sent data up to a Node.js server which calculated " +
-          "how many LED lights to light up, which it sent to an Arduino calibrated to light up a light strip based on what number it was passed. "
+          "QuizApp is a web application built in the MEAN stack and hosted on Heroku. Users can create their own quizzes " +
+          "for others to take. New quizzes are stored in MongoDB. Users can select quizzes from the quizzes list and take them. " +
+          "The quizzes are then automatically graded for them so they can see how well did."
         ]
       },
       moodalytics : {

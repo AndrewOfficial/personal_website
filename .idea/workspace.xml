@@ -27,7 +27,7 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.82353">
+            <state vertical-scroll-proportion="0.0">
               <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
               <folding />
             </state>
@@ -47,8 +47,8 @@
       <file leaf-file-name="appConfig.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/scripts/appConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38726333">
-              <caret line="135" column="29" selection-start-line="135" selection-start-column="29" selection-end-line="135" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.3958692">
+              <caret line="134" column="92" selection-start-line="134" selection-start-column="92" selection-end-line="134" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -165,7 +165,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -309,12 +308,13 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jscs.settings.JscsSettingsPage" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../QuizApp" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="javascript.nodejs.core.library.configured.version" value="5.1.0" />
@@ -838,7 +838,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.82353">
+        <state vertical-scroll-proportion="0.0">
           <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
           <folding />
         </state>
@@ -846,8 +846,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/scripts/appConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38726333">
-          <caret line="135" column="29" selection-start-line="135" selection-start-column="29" selection-end-line="135" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.3958692">
+          <caret line="134" column="92" selection-start-line="134" selection-start-column="92" selection-end-line="134" selection-end-column="92" />
           <folding />
         </state>
       </provider>
